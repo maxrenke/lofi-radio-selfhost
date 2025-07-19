@@ -34,6 +34,20 @@ This repository provides everything you need to self-host the Lofi Radio applica
 3. **Access your lofi radio:**
    Open `http://localhost:3000` in your browser
 
+## 🖥️ Desktop Player
+
+For a native desktop experience, a standalone radio player application is available for Windows, macOS, and Linux.
+
+### Features
+- 🎵 **Native Experience**: Runs as a standalone application on your OS.
+- 🔄 **Smart Connection**: Automatically tries to connect to your self-hosted server.
+- 🎨 **Custom Error Pages**: Friendly error pages if the server is not found.
+-  меню **Application Menu**: For easy access to common actions.
+
+### Downloads
+You can download the latest version of the desktop player from the **[Releases](https://github.com/yourusername/lofi-radio-selfhost/releases)** page.
+
+
 ## 🎯 What You Get
 
 - ✅ **One-command deployment** - Just run the script
@@ -42,6 +56,7 @@ This repository provides everything you need to self-host the Lofi Radio applica
 - ✅ **Auto-restart** - Container restarts on failure
 - ✅ **Health checks** - Monitors application health
 - ✅ **Lightweight** - Multi-stage Docker build
+- ✅ **Desktop Player** - Native desktop app for Windows, Mac, and Linux
 
 ## 📁 Repository Contents
 
@@ -52,7 +67,8 @@ lofi-radio-selfhost/
 ├── Dockerfile          # Multi-stage build configuration
 ├── docker-compose.yml  # Container orchestration
 ├── nginx.conf          # Production web server config
-└── .dockerignore       # Build optimization
+├── .dockerignore       # Build optimization
+└── radio-player-desktop/ # Standalone desktop application
 ```
 
 ## 🔧 Manual Commands
