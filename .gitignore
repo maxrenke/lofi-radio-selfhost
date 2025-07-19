@@ -1,0 +1,18 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Electron
+radio-player-desktop/dist/
+radio-player-desktop/release/
+radio-player-desktop/node_modules/
+
+# Development
+radio-player-desktop/claude_instructions.txt
+radio-player-desktop/icongenerator.html
+radio-player-desktop/icongenerator2.html
+
+# OS
+.DS_Store
+Thumbs.db

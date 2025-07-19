@@ -1,0 +1,63 @@
+{
+  "name": "radio-player-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Radio Player App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux",
+    "dist": "npm run build"
+  },
+  "build": {
+    "appId": "com.yourname.radioplayer",
+    "productName": "Radio Player",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "assets/**/*",
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        },
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico"
+    }
+  },
+  "keywords": ["radio", "music", "electron", "desktop"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest",
+    "electron-is-dev": "^latest"
+  }
+}
